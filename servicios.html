@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Servicios de OMEGA Creative: diseño gráfico, ilustración, modelado 3D y animación para marcas y proyectos creativos.">
+  <title>Servicios | OMEGA Creative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="omega.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap navrow">
+      <a class="mark" href="omega.creative.html" aria-label="Inicio de OMEGA Creative Agency">
+        <img src="imagenes/omega creative logo.png" alt="Logotipo OMEGA Creative Agency">
+        <span>OMEGA CREATIVE</span>
+      </a>
+      <nav class="links" aria-label="Navegación principal">
+        <a href="servicios.html">Servicios</a>
+        <a href="estudio.html">El estudio</a>
+        <a href="proceso.html">Proceso</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="cuenta.html">Cuenta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow mono">01 / Servicios</p>
+        <h1 class="page-title">Una dirección, cuatro disciplinas.</h1>
+        <p class="page-intro">Construimos sistemas visuales completos para que tu marca se vea consistente en cada formato, pantalla y movimiento.</p>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="wrap">
+        <div class="selection-note" id="selection-note" aria-live="polite">Elige el equipo que mejor se ajuste a tu proyecto.</div>
+        <div class="feature-list service-list">
+          <article class="service-card service-diseno" id="service-diseno" data-service="diseno">
+            <div class="service-card-content">
+              <p class="stag mono">01 · Equipo de diseño</p>
+              <h3>Identidad y comunicación</h3>
+              <p>Identidad corporativa, papelería, piezas para redes y material publicitario con una dirección visual clara.</p>
+              <button class="btn ghost service-select" type="button" data-service="diseno">Elegir este equipo</button>
+            </div>
+          </article>
+
+          <article class="service-card service-ilustracion" id="service-ilustracion" data-service="ilustracion">
+            <div class="service-card-content">
+              <p class="stag mono">02 · Equipo de ilustración</p>
+              <h3>Personajes y concept art</h3>
+              <p>Personajes, conceptos e ilustraciones para videojuegos, creadores, músicos y proyectos independientes.</p>
+              <button class="btn ghost service-select" type="button" data-service="ilustracion">Elegir este equipo</button>
+            </div>
+          </article>
+
+          <article class="service-card service-3d" id="service-3d" data-service="3d">
+            <div class="service-card-content">
+              <p class="stag mono">03 · Equipo 3D</p>
+              <h3>Objetos y escenarios</h3>
+              <p>Elementos tridimensionales para productos digitales, videojuegos, experiencias virtuales y visualización.</p>
+              <button class="btn ghost service-select" type="button" data-service="3d">Elegir este equipo</button>
+            </div>
+          </article>
+
+          <article class="service-card service-animacion" id="service-animacion" data-service="animacion">
+            <div class="service-card-content">
+              <p class="stag mono">04 · Equipo de animación</p>
+              <h3>Movimiento con propósito</h3>
+              <p>Animación 2D y 3D, motion graphics y piezas audiovisuales que hacen avanzar tu idea.</p>
+              <button class="btn ghost service-select" type="button" data-service="animacion">Elegir este equipo</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="selection-action">
+          <a class="btn primary" id="contact-selected" href="contacto.html">Continuar con este equipo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-wrap">
+      <span class="mono">© 2026 OMEGA Creative Agency</span>
+      <span class="mono">Diseño · Dibujo · 3D · Animación</span>
+    </div>
+  </footer>
+</body>
+</html>
+

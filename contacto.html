@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta a OMEGA Creative Agency para proyectos de branding, ilustración, modelado 3D y animación.">
+  <title>Contacto | OMEGA Creative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="omega.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap navrow">
+      <a class="mark" href="omega.creative.html" aria-label="Inicio de OMEGA Creative Agency">
+        <img src="imagenes/omega creative logo.png" alt="Logotipo OMEGA Creative Agency">
+        <span>OMEGA CREATIVE</span>
+      </a>
+      <nav class="links" aria-label="Navegación principal">
+        <a href="servicios.html">Servicios</a>
+        <a href="estudio.html">El estudio</a>
+        <a href="proceso.html">Proceso</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="cuenta.html">Cuenta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow mono">04 / Contacto</p>
+        <h1 class="page-title">Cuéntanos qué estás construyendo.</h1>
+        <p class="page-intro">Comparte el punto en el que estás y las disciplinas que necesitas. Te responderemos para entender el alcance y el siguiente paso.</p>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="wrap contact-grid">
+        <form class="contact-form" action="/api/contact" method="post" enctype="multipart/form-data">
+          <p class="selected-team" id="selected-team" aria-live="polite"></p>
+
+          <label for="nombre">Nombre
+            <input id="nombre" name="nombre" type="text" required>
+          </label>
+          <label for="correo">Correo
+            <input id="correo" name="correo" type="email" required>
+          </label>
+          <label for="mensaje">Háblanos del proyecto
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </label>
+          <label for="adjuntos">Adjunta documentos o imágenes
+            <input id="adjuntos" name="adjuntos" type="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.txt" multiple>
+            <span class="file-help">Imágenes, PDF y documentos. Puedes elegir varios archivos.</span>
+          </label>
+          <output class="file-list" id="file-list" aria-live="polite"></output>
+          <button class="btn primary" type="submit">Enviar consulta</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+
+        <ul class="contact-list">
+          <li><span class="k mono">Correo</span><a href="mailto:hola@omegacreative.co">hola@omegacreative.co</a></li>
+          <li><span class="k mono">Instagram</span><a href="https://instagram.com/omega.creative" target="_blank" rel="noopener noreferrer">@omega.creative</a></li>
+          <li><span class="k mono">Ubicación</span><span>Neiva, Huila, Colombia</span></li>
+          <li><span class="k mono">Modalidad</span><span>Presencial y remoto</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="page-content feedback-section">
+      <div class="wrap feedback-grid">
+        <div>
+          <div class="section-head">
+            <h2>Opiniones de clientes</h2>
+            <span class="tag mono">experiencias</span>
+          </div>
+          <div class="review-list" id="review-list">
+            <p class="empty-state">Todavía no hay opiniones publicadas.</p>
+          </div>
+        </div>
+
+        <form class="review-form" id="review-form">
+          <h2>Comparte tu experiencia</h2>
+          <label for="review-name">Nombre
+            <input id="review-name" name="nombre" type="text" required>
+          </label>
+          <label for="review-rating">Valoración
+            <select id="review-rating" name="valoracion">
+              <option value="5">5 / 5</option>
+              <option value="4">4 / 5</option>
+              <option value="3">3 / 5</option>
+              <option value="2">2 / 5</option>
+              <option value="1">1 / 5</option>
+            </select>
+          </label>
+          <label for="review-comment">Comentario
+            <textarea id="review-comment" name="comentario" required maxlength="1000"></textarea>
+          </label>
+          <button class="btn primary" type="submit">Publicar opinión</button>
+          <p class="form-status" id="review-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-wrap">
+      <span class="mono">© 2026 OMEGA Creative Agency</span>
+      <span class="mono">Hablemos de tu proyecto</span>
+    </div>
+  </footer>
+</body>
+</html>
+

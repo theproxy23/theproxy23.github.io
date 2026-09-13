@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proceso de trabajo de OMEGA Creative: investigación, conceptualización, desarrollo y aplicación visual de proyectos creativos.">
+  <title>Proceso | OMEGA Creative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="omega.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap navrow">
+      <a class="mark" href="omega.creative.html" aria-label="Inicio de OMEGA Creative Agency">
+        <img src="imagenes/omega creative logo.png" alt="Logotipo OMEGA Creative Agency">
+        <span>OMEGA CREATIVE</span>
+      </a>
+      <nav class="links" aria-label="Navegación principal">
+        <a href="servicios.html">Servicios</a>
+        <a href="estudio.html">El estudio</a>
+        <a href="proceso.html">Proceso</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="cuenta.html">Cuenta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow mono">03 / Proceso</p>
+        <h1 class="page-title">De la primera pregunta al resultado.</h1>
+        <p class="page-intro">Un proceso sencillo y visible para tomar mejores decisiones creativas, mantener el foco y llegar a entregables que puedas usar.</p>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="wrap">
+        <div class="numbered-list">
+          <article>
+            <span class="num mono">01</span>
+            <div>
+              <h3>Investigar</h3>
+              <p>Entendemos tu proyecto, tu público y tus referentes antes de proponer una dirección.</p>
+            </div>
+          </article>
+          <article>
+            <span class="num mono">02</span>
+            <div>
+              <h3>Conceptualizar</h3>
+              <p>Definimos los atributos, la idea central y el lenguaje visual que guiará el trabajo.</p>
+            </div>
+          </article>
+          <article>
+            <span class="num mono">03</span>
+            <div>
+              <h3>Desarrollar</h3>
+              <p>Construimos la identidad y las piezas necesarias, con revisiones claras en cada etapa.</p>
+            </div>
+          </article>
+          <article>
+            <span class="num mono">04</span>
+            <div>
+              <h3>Aplicar</h3>
+              <p>Llevamos el sistema a redes, papelería, 3D o animación para que funcione en el mundo real.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-content portfolio-section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Portafolio</h2>
+          <span class="tag mono">administración</span>
+        </div>
+
+        <form class="portfolio-form" id="portfolio-form" enctype="multipart/form-data">
+          <label for="portfolio-token">Token de administrador
+            <input id="portfolio-token" name="token" type="password" required>
+          </label>
+          <label for="portfolio-title">Nombre del proyecto
+            <input id="portfolio-title" name="titulo" type="text" placeholder="Ej. Identidad para Aurora" required>
+          </label>
+          <label for="portfolio-images">Imágenes del proyecto
+            <input id="portfolio-images" name="imagen" type="file" accept="image/*" multiple required>
+            <span class="file-help">Solo imágenes. Puedes seleccionar varias.</span>
+          </label>
+          <button class="btn primary" type="submit">Subir al portafolio</button>
+          <p class="form-status" id="portfolio-status" aria-live="polite"></p>
+        </form>
+
+        <div class="portfolio-grid" id="portfolio-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-wrap">
+      <span class="mono">© 2026 OMEGA Creative Agency</span>
+      <span class="mono">Proceso en 4 etapas</span>
+    </div>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cuenta de OMEGA Creative: inicia sesión o crea una cuenta para clientes y administradores del estudio.">
+  <title>Cuenta | OMEGA Creative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="omega.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap navrow">
+      <a class="mark" href="omega.creative.html" aria-label="Inicio de OMEGA Creative Agency">
+        <img src="imagenes/omega creative logo.png" alt="Logotipo OMEGA Creative Agency">
+        <span>OMEGA CREATIVE</span>
+      </a>
+      <nav class="links" aria-label="Navegación principal">
+        <a href="servicios.html">Servicios</a>
+        <a href="estudio.html">El estudio</a>
+        <a href="proceso.html">Proceso</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="cuenta.html">Cuenta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow mono">05 / Cuenta</p>
+        <h1 class="page-title">Tu espacio en OMEGA.</h1>
+        <p class="page-intro">Regístrate como cliente para mantener tus datos listos o entra como administrador para gestionar el contenido del sitio.</p>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="wrap account-grid">
+        <form class="account-form" id="login-form">
+          <h2>Iniciar sesión</h2>
+          <label for="login-email">Correo
+            <input id="login-email" name="correo" type="email" required>
+          </label>
+          <label for="login-password">Contraseña
+            <input id="login-password" name="password" type="password" required>
+          </label>
+          <button class="btn primary" type="submit">Entrar</button>
+          <p class="form-status" id="login-status" aria-live="polite"></p>
+        </form>
+
+        <form class="account-form" id="register-form">
+          <h2>Crear cuenta</h2>
+          <label for="register-name">Nombre
+            <input id="register-name" name="nombre" type="text" required>
+          </label>
+          <label for="register-email">Correo
+            <input id="register-email" name="correo" type="email" required>
+          </label>
+          <label for="register-password">Contraseña
+            <input id="register-password" name="password" type="password" minlength="8" required>
+            <span class="file-help">Mínimo 8 caracteres.</span>
+          </label>
+          <label for="register-role">Tipo de cuenta
+            <select id="register-role" name="rol">
+              <option value="customer">Cliente</option>
+              <option value="admin">Administrador</option>
+            </select>
+          </label>
+          <label class="admin-code-field" for="admin-code">Código de administrador
+            <input id="admin-code" name="codigo_admin" type="password">
+          </label>
+          <button class="btn primary" type="submit">Registrarme</button>
+          <p class="form-status" id="register-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="page-content account-session">
+      <div class="wrap">
+        <div class="session-panel" id="session-panel">
+          <p>Comprobando sesión...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-wrap">
+      <span class="mono">© 2026 OMEGA Creative Agency</span>
+      <span class="mono">Tu espacio OMEGA</span>
+    </div>
+  </footer>
+</body>
+</html>
+
